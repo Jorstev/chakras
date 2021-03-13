@@ -160,7 +160,7 @@ html {
     margin-bottom: 30px;
 }
 
-.chakra-posters .btn-more-products {
+.btn-more-products {
     text-transform: uppercase;
     letter-spacing: 3px;
     border: 1px solid var(--secondary);
@@ -229,4 +229,45 @@ html {
 .trending-products img {
     min-height: 100px;
     background-size: cover;
+}
+
+.tapestry-header {
+    background: var(--black);
+    width: 100%;
+    height: 314px;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tapestry-header .tapestry-header-title {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.tapestry-header .tapestry-header-subtitle {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin: 20px 0;
+}
+
+.tapestry-header--contraste {
+    color: var(--secondary);
+}
+
+.tapestry-btn {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background: var(--black);
+    padding: 5px 10px;
+    width: 140px;
+    height: 42px;
+    font-size: 1.1rem;
 }
