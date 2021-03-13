@@ -136,7 +136,7 @@ html {
     background-size: cover;
 }
 
-.chakra-posters .chakra-container .btn-format {
+.btn-format {
     width: 100%;
     height: 40px;
     background: var(--secondary);
@@ -147,14 +147,86 @@ html {
     letter-spacing: 3px;
 }
 
-.chakra-posters .chakra-container .chakra-description {
+.description {
     font-size: 1.3rem;
     font-weight: bold;
     color: var(--description);
     margin: 17px 0 17px 0;
 }
 
-.chakra-posters .chakra-container .chakra-money {
+.chakra-money {
     font-size: 1.5rem;
     color: var(--description);
+    margin-bottom: 30px;
+}
+
+.chakra-posters .btn-more-products {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    background: var(--primary);
+    padding: 5px 10px;
+    width: 235px;
+    height: 45px;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.trending-products {
+    color: var(--description);
+}
+
+.trending-products .trending-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.trending-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.trending-products .trending-btn-container {
+    display: flex;
+    width: 330px;
+    height: 48px;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.trending-products .trending-btn-container button {
+    font-size: 1.5rem;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: var(--quaternary);
+    background: var(--primary);
+}
+
+.trending-products .trending-btn-container button:hover {
+    border: 1px solid var(--description);
+    border-radius: 100px;
+}
+
+.trending-images-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.trending-products .trending-individual-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48%;
+}
+
+.trending-products img {
+    min-height: 100px;
+    background-size: cover;
 }
