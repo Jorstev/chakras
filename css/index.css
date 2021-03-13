@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /*font de 10px, pero 62.5% para que respete los 16px por default de los browsers*/
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+}
+
+
+/*header navigation*/
+
+.header {
+    width: 100%;
+    height: 438px;
+}
+
+.header .header-nav {
+    width: 100%;
+    height: 98px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: var(--primary);
+}
+
+.header .header-nav div {
+    width: 150px;
+}
+
+.header .header-nav .option-bar {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-nav .option-bar img {
+    width: 20px;
+}
+
+.header .header-nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.header .header-nav .logo img {
+    width: 34%;
+}
+
+.header .header-nav .icons-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header .header-nav .icons-container img {
+    width: 20px;
+    margin-left: 15px;
+}
+
+
+/*header section welcome*/
+
+.header .header-sct-welcome {
+    background-image: url(../img/background-image.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-sct-welcome--container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .header-sct-welcome .header-title {
+    font-size: 4rem;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.header .header-sct-welcome .header-btn {
+    padding: 13px 27px;
+    font-size: 1.1rem;
+    color: var(--primary);
+    background: var(--secondary);
+    outline: none;
+    border: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 13px;
+}
+
+.chakra-posters {
+    width: 100%;
+    height: 934px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--tertiary);
+}
+
+.chakra-posters .chakra-title {
+    font-size: 2rem;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.chakra-posters .chakra-subtitle {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--quaternary);
+    text-align: center;
+}
+
+.chakra-posters .chakra-container {
+    height: 725px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.chakra-posters .chakra-container img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.chakra-posters .chakra-container .btn-format {
+    width: 100%;
+    height: 40px;
+    background: var(--secondary);
+    outline: 0;
+    border: none;
+    text-transform: uppercase;
+    color: var(--primary);
+    letter-spacing: 3px;
+}
+
+.chakra-posters .chakra-container .chakra-description {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--description);
+    margin: 17px 0 17px 0;
+}
+
+.chakra-posters .chakra-container .chakra-money {
+    font-size: 1.5rem;
+    color: var(--description);
+}
+
+.chakra-posters .chakra-container .description {
+    margin-bottom: 100px;
+}
