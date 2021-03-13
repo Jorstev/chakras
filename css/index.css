@@ -104,7 +104,7 @@ html {
 
 .chakra-posters {
     width: 100%;
-    height: 934px;
+    min-height: 934px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,14 +125,14 @@ html {
 }
 
 .chakra-posters .chakra-container {
-    height: 725px;
+    height: 100%;
     width: 100%;
     margin-top: 35px;
 }
 
 .chakra-posters .chakra-container img {
     width: 100%;
-    height: 100%;
+    max-height: 725px;
     background-size: cover;
 }
 
