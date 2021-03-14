@@ -359,7 +359,7 @@ html {
 .blog-sct img {
     background-size: cover;
     width: 100%;
-    min-width: 450px;
+    min-width: 350px;
 }
 
 .blog-sct .blog-text {
