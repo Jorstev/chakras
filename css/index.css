@@ -414,7 +414,7 @@ html {
 
 .announcement-input {
     background: var(--black);
-    padding: 10px 100px;
+    padding: 10px;
     border: var(--black);
     border-bottom: 1px solid var(--primary);
     width: 350px;
