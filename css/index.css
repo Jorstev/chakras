@@ -359,7 +359,7 @@ html {
 .blog-sct img {
     background-size: cover;
     width: 100%;
-    min-width: 350px;
+    min-height: 350px;
 }
 
 .blog-sct .blog-text {
@@ -417,7 +417,7 @@ html {
     padding: 10px;
     border: var(--black);
     border-bottom: 1px solid var(--primary);
-    width: 350px;
+    min-width: 200px;
     outline: none;
     color: var(--primary);
     font-size: 2rem;
