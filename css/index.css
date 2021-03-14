@@ -466,7 +466,7 @@ html {
 .elephant-cards-container .elephant-individual-card p {
     position: absolute;
     background: var(--primary);
-    color: var(--elephant-description);
+    color: var(--description-secondary);
     top: 50%;
     left: 50%;
     font-size: 1.3rem;
@@ -476,4 +476,86 @@ html {
     transform: translate(-50%, 90%);
     padding: 15px 10px;
     line-height: 18px;
+}
+
+.product-information {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 380px;
+    justify-content: space-around;
+    padding: 35px 15px;
+}
+
+.product-information-container {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.product-information img {
+    width: 36px;
+    height: 36px;
+    margin-right: 35px;
+}
+
+.product-information-title {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.product-information-details {
+    color: var(--quaternary);
+    font-size: 1.5rem;
+}
+
+
+/*footer section*/
+
+.footer-containter {
+    background: var(--footer);
+    padding: 50px 0 0 15px;
+}
+
+.footer-containter .footer-sct-container {
+    display: flex;
+    flex-direction: column;
+    height: 107px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footer-containter img {
+    width: 22px;
+    height: 19.44px;
+}
+
+.footer-containter .footer-titles {
+    font-size: 1.6rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.footer-containter .footer-link {
+    font-size: 1.5rem;
+    color: var(--footer-link);
+    text-decoration: none;
+}
+
+.footer-containter .subscribe-container {
+    width: 100%;
+    height: 150px;
+    padding: 0 10px 0 0;
+}
+
+.footer-containter .footer-input {
+    padding: 20px 10px;
+    width: 100%;
+    height: 15px;
+    border-radius: 100px;
+    background: var(--footer);
+    border: 1px solid var(--footer-link);
+    outline: none;
+    margin-top: 20px;
 }
