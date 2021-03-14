@@ -8,6 +8,7 @@ html {
     font-size: 62.5%;
     /*font de 10px, pero 62.5% para que respete los 16px por default de los browsers*/
     font-family: 'Poppins', sans-serif;
+    padding: none;
 }
 
 
@@ -304,6 +305,11 @@ html {
     font-size: 1.4rem;
     font-style: italic;
     color: var(--quaternary);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
 }
 
 
