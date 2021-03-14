@@ -442,3 +442,38 @@ html {
     font-size: 1.1rem;
     color: var(--secondary);
 }
+
+
+/*Elephant section*/
+
+.elephant-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.elephant-cards-container .elephant-individual-card {
+    width: 48%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.elephant-cards-container .elephant-individual-card img {
+    width: 100%;
+}
+
+.elephant-cards-container .elephant-individual-card p {
+    position: absolute;
+    background: var(--primary);
+    color: var(--elephant-description);
+    top: 50%;
+    left: 50%;
+    font-size: 1.3rem;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transform: translate(-50%, 90%);
+    padding: 15px 10px;
+    line-height: 18px;
+}
