@@ -9,6 +9,7 @@ html {
     /*font de 10px, pero 62.5% para que respete los 16px por default de los browsers*/
     font-family: 'Poppins', sans-serif;
     padding: none;
+    scroll-behavior: smooth;
 }
 
 
@@ -51,6 +52,10 @@ html {
 
 .header .header-nav .logo img {
     width: 34%;
+}
+
+.header .header-nav .header-nav-enlaces {
+    display: none;
 }
 
 .header .header-nav .icons-container {
@@ -105,36 +110,33 @@ html {
 
 /*chakra section*/
 
-.chakra-posters {
-    width: 100%;
-    min-height: 934px;
+.chakra-title-container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: var(--tertiary);
-    padding: 0 15px;
 }
 
-.chakra-posters .chakra-title {
+.chakra-title {
     font-size: 2rem;
     margin-top: 35px;
     margin-bottom: 15px;
 }
 
-.chakra-posters .chakra-subtitle {
+.chakra-subtitle {
     font-size: 1.4rem;
     font-style: italic;
     color: var(--quaternary);
     text-align: center;
 }
 
-.chakra-posters .chakra-container {
+.chakra-container {
     height: 100%;
     width: 100%;
     margin-top: 35px;
 }
 
-.chakra-posters .chakra-container img {
+.chakra-container img {
     width: 100%;
     max-height: 725px;
     background-size: cover;
@@ -144,27 +146,28 @@ html {
 
 .btn-format {
     width: 100%;
-    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
     background: var(--secondary);
-    outline: 0;
     border: none;
     text-transform: uppercase;
     color: var(--primary);
     letter-spacing: 3px;
     display: block;
+    margin-bottom: 10px;
 }
 
 .description {
     font-size: 1.3rem;
     font-weight: bold;
     color: var(--description);
-    margin: 17px 0 17px 0;
+    padding: 17px 0 17px 0;
 }
 
 .chakra-money {
     font-size: 1.5rem;
     color: var(--description);
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .btn-more-products {
@@ -177,7 +180,7 @@ html {
     width: 235px;
     height: 45px;
     font-size: 1.1rem;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 .trending-products {
@@ -232,11 +235,6 @@ html {
     flex-direction: column;
     justify-content: center;
     width: 48%;
-}
-
-.trending-products img {
-    min-height: 100px;
-    background-size: cover;
 }
 
 
@@ -346,8 +344,11 @@ html {
 
 /*Blog section*/
 
-.blog-sct {
+.blog-general-sct {
     background: var(--background);
+}
+
+.blog-general-sct .blog-sct-cards {
     width: 100%;
     padding: 0 15px;
     display: flex;
@@ -356,19 +357,19 @@ html {
     align-items: center;
 }
 
-.blog-sct img {
+.blog-general-sct .blog-sct-cards img {
     background-size: cover;
     width: 100%;
     min-height: 350px;
 }
 
-.blog-sct .blog-text {
+.blog-general-sct .blog-sct-cards .blog-text {
     font-size: 1.5rem;
     color: var(--description);
     padding: 10px 0;
 }
 
-.blog-sct .blog-description {
+.blog-general-sct .blog-sct-cards .blog-description {
     font-size: 1.6rem;
     font-weight: bold;
     color: var(--blog-desciption);
@@ -385,13 +386,13 @@ html {
     width: 146px;
     height: 45px;
     font-size: 1.1rem;
-    margin: auto;
 }
 
-.blog-sct .blog-btn-container {
+.blog-general-sct .blog-btn-container {
+    padding: 40px 0 25px 0;
     display: flex;
     justify-content: center;
-    padding: 40px 0 25px 0;
+    align-items: center;
 }
 
 .announcement-header3 {
@@ -457,10 +458,14 @@ html {
     width: 48%;
     margin-bottom: 15px;
     position: relative;
+    max-width: 363px;
+    max-height: 363px;
 }
 
 .elephant-cards-container .elephant-individual-card img {
     width: 100%;
+    max-width: 363px;
+    max-height: 363px;
 }
 
 .elephant-cards-container .elephant-individual-card p {
@@ -471,11 +476,10 @@ html {
     left: 50%;
     font-size: 1.3rem;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 600;
-    transform: translate(-50%, 90%);
-    padding: 15px 10px;
-    line-height: 18px;
+    transform: translate(-50%, 20%);
+    padding: 13px 10px;
 }
 
 .product-information {
@@ -547,6 +551,7 @@ html {
     width: 100%;
     height: 150px;
     padding: 0 10px 0 0;
+    background: var(--footer) !important;
 }
 
 .footer-containter .footer-input {
@@ -558,4 +563,174 @@ html {
     border: 1px solid var(--footer-link);
     outline: none;
     margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .chakra-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 15px;
+        justify-content: left;
+        height: 100%;
+        width: 100%;
+    }
+    .chakra-container .chakra-image {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 359px;
+        margin: 0 11px 0 11px;
+        max-width: 250px;
+        margin-bottom: 30px;
+    }
+    .chakra-container .chakra-image img {
+        width: 100%;
+        height: 359px;
+    }
+    .cards-general-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 15px;
+        justify-content: left;
+        height: 100%;
+        width: 100%;
+    }
+    .cards-general-container .card-container {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 359px;
+        margin: 0 11px 0 11px;
+        max-width: 250px;
+        text-align: left;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+    .blog-general-sct .blog-sct-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 15px;
+        justify-content: left;
+        height: 100%;
+        width: 100%;
+    }
+    .blog-general-sct .blog-sct-cards .blog-container {
+        display: flex;
+        flex-direction: column;
+        height: 420px;
+        margin: 0 11px 0 11px;
+        margin-bottom: 30px;
+        height: 394px;
+        width: 300px;
+    }
+    .blog-general-sct .blog-sct-cards img {
+        background-size: cover;
+        min-height: 232px;
+    }
+    .elephant-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    .elephant-cards-container .elephant-individual-card {
+        width: 30%;
+        margin-bottom: 30px;
+        position: relative;
+        max-width: 363px;
+        max-height: 363px;
+    }
+    .elephant-cards-container .elephant-individual-card img {
+        width: 100%;
+        max-width: 363px;
+        max-height: 363px;
+    }
+    .product-information {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 250px;
+        justify-content: space-around;
+        padding: 35px 50px;
+    }
+    .product-information-container {
+        display: flex;
+        margin-bottom: 40px;
+        width: 15%;
+    }
+    .footer-containter {
+        background: var(--footer);
+        padding: 50px 0 0 15px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 15px;
+    }
+    .footer-containter .footer-sct-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 48%;
+        margin-bottom: 15px;
+    }
+    .footer-containter .subscribe-container {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header .header-nav .option-bar {
+        display: none;
+    }
+    .header .header-nav .header-nav-enlaces {
+        display: flex;
+        justify-content: center;
+        color: var(--nav);
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .header .header-nav .header-nav-enlaces ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .header .header-nav .header-nav-enlaces ul li {
+        width: 180px;
+        padding: 0 60px;
+    }
+    .btn-format {
+        display: none;
+    }
+    .footer-containter {
+        background: var(--footer);
+        padding: 50px 0 0 15px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 15px;
+        height: 300px;
+        align-items: center;
+    }
+    .footer-containter .footer-sct-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 20%;
+        margin-bottom: 15px;
+    }
+    .footer-containter .subscribe-container {
+        width: 50%;
+    }
+    .footer-containter .subscribe-container {
+        width: 20%;
+    }
+    .footer-containter .footer-titles {
+        margin-bottom: 25px;
+    }
+    .footer-containter .footer-link {
+        margin-bottom: 15px;
+    }
 }
